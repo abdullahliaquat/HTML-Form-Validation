@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="formbox">
+            <h1 id="title">Sign Up</h1>
+            <form id="signupForm">
+                <div class="input-group">
+                    <div class="input-field" id="namefield">
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" placeholder="Password">
+                    </div>
+                    <div class="input-field" id="cpfield">
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                    </div>
+                    <div class="input-field" id="dobfield">
+                        <input type="date" id="dob" placeholder="Date of Birth">
+                    </div>
+                    <div class="input-field" id="pnofield">
+                        <input type="tel" id="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="input-field" id="countryfield">
+                        <input type="text" id="country" placeholder="Country">
+                    </div>
+                    <div class="input-field" id="genderfield">
+                        <label>Gender: </label><br>
+                        <input type="radio" id="male" name="gender" value="male"> <label for="male" style="font-family: Arial, sans-serif; font-size: 14px;">Male </label>
+                        <input type="radio" id="female" name="gender" value="female"> <label for="female" style="font-family: Arial, sans-serif; font-size: 14px;">Female </label>
+                        <input type="radio" id="other" name="gender" value="other"> <label for="other" style="font-family: Arial, sans-serif; font-size: 14px;">Other</label>
+                    </div>
+                    <div class="btn-field">
+                        <button type="submit" id="signupBtn">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('signupForm');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const dob = document.getElementById('dob').value;
+            const phone = document.getElementById('phone').value;
+            const country = document.getElementById('country').value;
+            const gender = document.querySelector('input[name="gender"]:checked');
+            
+            if (!name || !email || !password || !confirmPassword || !dob || !phone || !country || !gender) {
+                alert('Please fill all fields!');
+                return;
+            }
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+
+            alert('Account created successfully!');
+        });
+    </script>
+</body>
+</html>
