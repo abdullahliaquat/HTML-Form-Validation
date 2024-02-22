@@ -3,4 +3,7 @@ This repository contains HTML and CSS files for SignIn and SignUp forms, along w
 
 # Snapshots
 Here are both of the forms (SignIn and SignUp):
+
 ![Image](https://github.com/abdullahliaquat/HTML-Form-Validation/blob/main/Snaps/signin.PNG)
+
+![Image2](https://github.com/abdullahliaquat/HTML-Form-Validation/blob/main/Snaps/signup.PNG)
