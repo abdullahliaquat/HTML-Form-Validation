@@ -1,5 +1,5 @@
 # HTML-Form-Validation
-This repository contains HTML and CSS files for SignIn and SignUp forms, along with JavaScript code to perform front-end validation for various input fields such as username, password, email, age, etc., using pure JavaScript and regex.
+This repository contains HTML and CSS files for SignIn and SignUp forms, along with JavaScript code to perform front-end validation for various input fields such as username, password, email, age, etc.
 
 # Validations
 Some of the validatins that I have added include;
